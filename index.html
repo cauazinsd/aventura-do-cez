@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -8,67 +7,80 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <title>Caça ao Tesouro Pirata</title>
+    <title>Tesouro Mágico</title>
 </head>
 <body>
     <main>
-        <!-- PASSO 0 -->
         <div class="passo ativo" id="passo-0">
-            <img src="img/pirata-passo0.png" alt="Mapa antigo na taverna">
-            <p>Cez e Sagado encontraram um pergaminho antigo numa taverna de porto que falava de um tesouro pirata perdido,
-               guardado por armadilhas e lendas. A carta indica duas rotas possíveis para iniciar a busca.</p>
-            <button class="btn-proximo" data-proximo="1">Seguir o mapa do Capitão Barba Negra</button>
-            <button class="btn-proximo" data-proximo="2">Investigar o diário do Primeiro‑Mate</button>
+            <img src="img/cenario-passo0.png" alt="Sagado e Cez lendo um pergaminho antigo">
+            <p>Em uma tarde chuvosa, Sagado e seu melhor amigo Cez encontram um pergaminho misterioso dentro de uma velha caixa no sótão. Ele falava sobre um **Tesouro Mágico**, capaz de conceder sabedoria e poder a quem o encontrasse. Determinados, os dois decidem partir nessa jornada lendária!</p>
+            <button class="btn-proximo" data-proximo="1">Seguir para as Montanhas de Cristal</button>
+            <button class="btn-proximo" data-proximo="2">Viajar para a Floresta Sombria</button>
         </div>
 
-        <!-- PASSO 1 -->
         <div class="passo" id="passo-1">
-            <p>Vocês partem de Vila do Mar ao amanhecer rumo à Ilha da Serpente, onde o mapa indica estar a primeira pista.</p>
-            <button class="btn-proximo" data-proximo="3">Buscar a pista no topo da ilha</button>
+            <p>Nas Montanhas de Cristal, Sagado e Cez escalam penhascos gelados enquanto procuram a primeira pista. No topo, há uma caverna que brilha com uma luz azulada.</p>
+            <button class="btn-proximo" data-proximo="3">Entrar na caverna</button>
             <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
         </div>
 
-        <!-- PASSO 2 -->
         <div class="passo" id="passo-2">
-            <p>O diário fala de um velho farol na Fortaleza de São João que guarda uma pista crucial.
-               Por onde começam?</p>
-            <button class="btn-proximo" data-proximo="5">Investigar o farol abandonado</button>
-            <button class="btn-proximo" data-proximo="6">Explorar as cavernas próximas</button>
+            <p>Na Floresta Sombria, o vento sussurra segredos e os galhos parecem observar os viajantes. No mapa, uma marca indica que a próxima pista está escondida em um dos locais místicos da floresta. Qual caminho seguir?</p>
+            <button class="btn-proximo" data-proximo="5">Explorar as ruínas antigas</button>
+            <button class="btn-proximo" data-proximo="6">Seguir o som do rio encantado</button>
         </div>
 
-        <!-- PASSO 3 -->
         <div class="passo" id="passo-3">
-            <p>No alto da Ilha da Serpente, Cez e Sagado encontram uma inscrição gravada em pedra:
-               “A próxima pista está nas Brumas da Floresta”.</p>
-            <button class="btn-proximo" data-proximo="7">Seguir para a Floresta das Brumas</button>
+            <p>Dentro da caverna, os amigos encontram uma inscrição nas paredes que fala de um "Portal Dourado" escondido nas terras do Sol Eterno — o **Deserto de Lume**.</p>
+            <button class="btn-proximo" data-proximo="7">Viajar para o Deserto de Lume</button>
         </div>
 
-        <!-- PASSO 4 -->
         <div class="passo" id="passo-4">
-            <img src="img/pirata-passo4-voltar-casa.png" alt="Cez e Sagado retornando ao porto">
-            <p>O medo da aventura é maior que a curiosidade. Vocês voltam para casa,
-               mas sempre se perguntam o que teria acontecido se tivessem continuado.</p>
+            <img src="img/cenario-passo4-voltar-casa.png" alt="Sagado e Cez voltando para casa">
+            <p>O frio e o medo vencem. Sagado e Cez voltam para casa, mas a lembrança do Tesouro Mágico nunca os abandona...</p>
         </div>
 
-        <!-- PASSO 5 -->
         <div class="passo" id="passo-5">
-            <p>No interior do farol, descobrem uma bússola antiga que aponta diretamente
-               para as Brumas da Floresta.</p>
-            <button class="btn-proximo" data-proximo="7">Viajar para a Floresta das Brumas</button>
+            <p>Nas ruínas antigas, Sagado encontra um mosaico quebrado que, ao ser tocado, revela uma estrela dourada apontando para o **Deserto de Lume**.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para o Deserto de Lume</button>
         </div>
 
-        <!-- PASSO 6 -->
         <div class="passo" id="passo-6">
-            <p>As cavernas são um labirinto escuro e terminam em um beco sem saída.
-               Não há pistas aqui.</p>
-            <button class="btn-proximo" data-proximo="8">Voltar ao farol e investigar lá</button>
+            <p>Seguindo o som do rio encantado, os amigos descobrem uma cachoeira de névoa brilhante. Porém, atrás dela não há nada além de uma parede de pedra.</p>
+            <button class="btn-proximo" data-proximo="8">Retornar e explorar as ruínas antigas</button>
         </div>
 
-        <!-- PASSO 7 -->
         <div class="passo" id="passo-7">
-            <p>Na Floresta das Brumas, Cez e Sagado chegam a um rio que se divide em duas corredeiras.</p>
-            <button class="btn-proximo" data-proximo="9">Seguir pela corrente à esquerda</button>
-            <button class="btn-proximo" data-proximo="10">Seguir pela corrente à direita</button>
+            <p>No Deserto de Lume, o calor é quase insuportável. O mapa mostra duas possíveis direções: uma tempestade de areia ao norte e um oásis ao sul.</p>
+            <button class="btn-proximo" data-proximo="9">Seguir rumo ao norte</button>
+            <button class="btn-proximo" data-proximo="10">Ir até o oásis ao sul</button>
         </div>
 
-        <!-- PASSO
+        <div class="passo" id="passo-8">
+            <p>De volta às ruínas, Cez encontra um símbolo mágico que brilha quando exposto à luz. Ele revela o caminho correto para o **Deserto de Lume**!</p>
+            <button class="btn-proximo" data-proximo="7">Viajar para o Deserto de Lume</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>Enfrentando a tempestade de areia, Sagado e Cez encontram uma antiga porta dourada parcialmente enterrada. Ela emite um brilho mágico que parece chamá-los.</p>
+            <button class="btn-proximo" data-proximo="11">Abrir o Portal Dourado</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>No oásis, os viajantes descansam, mas percebem que o lugar está vazio de pistas. Só há silêncio e miragens.</p>
+            <button class="btn-proximo" data-proximo="12">Voltar e seguir para o norte</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo11-cidade-perdida.png" alt="Sagado e Cez encontrando o Tesouro Mágico em uma sala dourada">
+            <p>Ao atravessar o portal, Sagado e Cez entram em uma sala dourada repleta de luz. No centro, repousa o **Tesouro Mágico**, uma joia pulsante que revela visões do passado e do futuro. Em silêncio, eles juram protegê-lo e usar seu poder apenas para o bem.</p>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Retornando e enfrentando a tempestade, finalmente encontram o Portal Dourado. A luz que sai dele é tão intensa que o deserto inteiro parece despertar.</p>
+            <button class="btn-proximo" data-proximo="11">Abrir o Portal Dourado</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
